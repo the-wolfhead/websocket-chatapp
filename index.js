@@ -14,5 +14,5 @@ app.use(express.static('public'));
 var io = socket(server);
 
 io.on('connection', function(){
-    console.log('made socket connection');
+    console.log('made socket connection', socket.id);
 });
